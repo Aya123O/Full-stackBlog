@@ -20,8 +20,8 @@ export default function AddBlog() {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '90vh' }}>
-      <div className="card shadow-lg p-4" style={{ maxWidth: '600px', width: '100%', borderRadius: '15px' }}>
+    <div className="container d-flex justify-content-center align-items-center " style={{ minHeight: '90vh' }}>
+      <div className="card shadow-lg p-4" style={{ maxWidth: '800px', width: '100%', borderRadius: '15px' }}>
         <h2 className="mb-4 text-center fw-bold text-primary">Add New Blog</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">

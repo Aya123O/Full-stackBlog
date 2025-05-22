@@ -19,7 +19,7 @@ export default function Register() {
 
   return (
     <div className="container d-flex justify-content-center align-items-center bg-body-secondary" style={{ height: '100vh' }}>
-      <div className="card p-4 shadow" style={{ maxWidth: '600px', width: '100%' }}>
+      <div className="card p-4 shadow" style={{ maxWidth: '800px', width: '100%' }}>
         <h3 className="text-center mb-4">Register</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">

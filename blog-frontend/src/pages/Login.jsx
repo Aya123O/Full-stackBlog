@@ -26,6 +26,7 @@ export default function Login() {
     try {
       const res = await axios.post('login/', form);
       localStorage.setItem('token', res.data.access);
+      localStorage.setItem('username', form.username);
       localStorage.setItem('refreshToken', res.data.refresh);
       navigate('/blogs');
     } catch (error) {
@@ -36,7 +37,7 @@ export default function Login() {
 
   return (
     <div className="container d-flex justify-content-center align-items-center bg-light" style={{ height: '100vh' }}>
-      <div className="card p-4 shadow" style={{ maxWidth: '600px', width: '100%' }}>
+      <div className="card p-4 shadow" style={{ maxWidth: '800px', width: '100%' }}>
         <h3 className="text-center mb-4">Login</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">

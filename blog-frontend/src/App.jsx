@@ -4,10 +4,11 @@ import Register from './pages/Register';
 import AddBlog from './pages/AddBlog';
 import BlogList from './pages/BlogList';
 import Navbar from './components/Navbar';
+import Profile from './pages/Profile';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="container">
+      <div className="container bg-light">
         <Navbar />
         <div className="content">
           <Routes>
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/add" element={<AddBlog />} />
             <Route path="/blogs" element={<BlogList />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
       </div>
