@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Blog(models.Model):
     name= models.CharField(max_length=255)
-    
     title = models.CharField(max_length=255)
     body = models.TextField()
     image_url = models.URLField()
