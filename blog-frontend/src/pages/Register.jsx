@@ -51,7 +51,13 @@ export default function Register() {
             <button type="submit" className="btn btn-success">Register</button>
           </div>
         </form>
+        <div className="text-center mt-3">
+        <p>
+          Already have an account? <a href="/login">Login</a>
+        </p>
       </div>
+      </div>
+      
     </div>
   );
 }
