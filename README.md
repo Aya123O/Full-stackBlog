@@ -129,8 +129,6 @@ JWT token stored in localStorage
 
 All secure requests include:
 Authorization: Bearer <token>
------screenshots
-![Description of screenshot](images/img1.png)
 
 
 
